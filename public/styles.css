@@ -287,6 +287,17 @@ a {
   top: -80px;
 }
 
+.promo p, .promo a {
+  opacity: 0; /* Inicialmente oculto */
+  visibility: hidden; /* Evita que ocupen espacio cuando están ocultos */
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.regalo.clicked .promo p,
+.regalo.clicked .promo a {
+  opacity: 1; /* Mostrar al hacer clic */
+  visibility: visible; /* Asegura que los elementos sean visibles */
+}
 
 /* LINEA FACHA */
 
